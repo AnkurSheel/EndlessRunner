@@ -3,24 +3,23 @@ using System.Collections;
 
 public class TileManager : MonoBehaviour
 {
-
   public GameObject LevelPrefab;
   public GameObject CurrentLevelPiece;
+
+  private static TileManager instance;
+  public static TileManager Instance
+  {
+    get { return instance; }
+  }
 
   // Use this for initialization
   void Start()
   {
-    SpawnLevelPiece();
-  }
-
-  // Update is called once per frame
-  void Update()
-  {
-
+    instance = this;
   }
 
   public void SpawnLevelPiece()
   {
-    Instantiate(LevelPrefab, CurrentLevelPiece.transform.GetChild(0).position, Quaternion.identity);
+    CurrentLevelPiece = (GameObject)Instantiate(LevelPrefab, CurrentLevelPiece.transform.GetChild(0).position, Quaternion.identity);
   }
 }
