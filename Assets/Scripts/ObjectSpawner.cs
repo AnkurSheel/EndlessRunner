@@ -44,12 +44,18 @@ public class ObjectSpawner : MonoBehaviour
 
   private void SpawnCoins()
   {
-    Instantiate(Coins[(Random.Range(0, Coins.Length))], new Vector3(Random.Range(-3.0f, 3.0f), 0.0f, Player.transform.position.z + Random.Range(10.0f, 15.0f)), Quaternion.identity);
+    if(Coins.Length > 0)
+    {
+      Instantiate(Coins[(Random.Range(0, Coins.Length))], new Vector3(Random.Range(-3.0f, 3.0f), 0.0f, Player.transform.position.z + Random.Range(10.0f, 15.0f)), Quaternion.identity);
+    }
   }
 
   private void SpawnEnemy()
   {
-    GameObject tempEnemy = (GameObject)Instantiate(Enemy, new Vector3(Random.Range(-2.0f, 2.0f), 0.0f, Player.transform.position.z + Random.Range(10.0f, 20.0f)), Quaternion.identity);
-    tempEnemy.transform.localScale = new Vector3(Random.Range(1, 5), Random.Range(1, 4), Random.Range(1, 10));
+    if (Enemy != null)
+    {
+      GameObject tempEnemy = (GameObject)Instantiate(Enemy, new Vector3(Random.Range(-2.0f, 2.0f), 0.0f, Player.transform.position.z + Random.Range(10.0f, 20.0f)), Quaternion.identity);
+      tempEnemy.transform.localScale = new Vector3(Random.Range(1, 5), Random.Range(1, 4), Random.Range(1, 10));
+    }
   }
 }
