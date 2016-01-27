@@ -35,6 +35,7 @@ public class PlayerCollision : MonoBehaviour
   {
     if (other.gameObject.tag == "Coin")
     {
+      ParticleManager.Instance.OnCoinCollected(other.gameObject.transform.position);
       Destroy(other.gameObject);
     }
   }
