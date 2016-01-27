@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
   private PlayerControl controlScript;
+  public GameObject restartUI;
 
   public void Start()
   {
@@ -42,19 +42,23 @@ public class PlayerCollision : MonoBehaviour
     if (other.gameObject.tag == "Coin")
     {
       OnCoinCollected(other);
-      
     }
   }
 
   private void OnPlayerDied()
   {
     DataManager.Instance.Save();
-    SceneManager.LoadScene("RunnerGame");
+    restartUI.gameObject.SetActive(true);
+    GetComponent<Rigidbody>().isKinematic = true;
+    GetComponent<MeshRenderer>().enabled = false;
+    GetComponent<PlayerControl>().enabled = false;
+    GetComponentInChildren<ParticleSystem>().Play();
   }
 
   private void OnCoinCollected(Collider other)
   {
     DataManager.Instance.CurrentScore++;
+    DataManager.Instance.CoinsCollected++;
     ParticleManager.Instance.OnCoinCollected(other.gameObject.transform.position);
     Destroy(other.gameObject);
   }

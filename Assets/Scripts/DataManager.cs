@@ -20,6 +20,13 @@ public class DataManager : MonoBehaviour
     set { highScore = value; }
   }
 
+  private int coinsCollected = 0;
+  public int CoinsCollected
+  {
+    get { return coinsCollected; }
+    set { coinsCollected = value; }
+  }
+
   private static DataManager instance;
   public static DataManager Instance
   {
@@ -46,6 +53,7 @@ public class DataManager : MonoBehaviour
     FileStream file = File.Create(Application.persistentDataPath + "/gameinfo.dat");
     GameData data = new GameData();
     data.highScore = highScore;
+    data.coinsCollected = coinsCollected;
     bin.Serialize(file, data);
     file.Close();
   }
@@ -58,6 +66,7 @@ public class DataManager : MonoBehaviour
       FileStream file = File.Open(Application.persistentDataPath + "/gameinfo.dat", FileMode.Open);
       GameData data = (GameData)bin.Deserialize(file);
       highScore = data.highScore;
+      coinsCollected = data.coinsCollected;
     }
   }
 }
@@ -66,4 +75,5 @@ public class DataManager : MonoBehaviour
 class GameData
 {
   public int highScore = 0;
+  public int coinsCollected = 0;
 }
