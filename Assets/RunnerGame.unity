@@ -344,7 +344,7 @@ MonoBehaviour:
   - {fileID: 156254, guid: f626a67106bd54145b6e7856b3de7e25, type: 2}
   - {fileID: 146942, guid: 6348d46cdf39fc646baadcc4b585322c, type: 2}
   - {fileID: 153304, guid: 61ed895e8f16b0949852b2079ec56237, type: 2}
-  Enemy: {fileID: 116060, guid: 0aad523ff348d4b4c9084dbafb54fda8, type: 2}
+  Enemy: {fileID: 0}
   MinCoinSpawnTimer: 3
   MaxCoinSpawnTimer: 5
   MinEnemySpawnTimer: 7
