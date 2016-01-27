@@ -15,7 +15,12 @@ public class PlayerCollision : MonoBehaviour
   {
     if (collision.gameObject.tag == "Enemy")
     {
-      SceneManager.LoadScene("RunnerGame");
+      Vector3 normal = collision.contacts[0].normal;
+      if (Mathf.Abs(normal.z) > Mathf.Abs(normal.y))
+      {
+        SceneManager.LoadScene("RunnerGame");
+      }
+      Debug.Log(normal);
     }
     else if(collision.gameObject.tag == "Ground")
     {

@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TileManager : MonoBehaviour
+public class LevelManager : MonoBehaviour
 {
   public GameObject LevelPrefab;
   public GameObject CurrentLevelPiece;
 
   private GameObject PreviousLevelPiece;
 
-  private static TileManager instance;
-  public static TileManager Instance
+  private static LevelManager instance;
+  public static LevelManager Instance
   {
     get { return instance; }
   }

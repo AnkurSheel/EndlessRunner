@@ -4,16 +4,16 @@ using System.Collections;
 public class PlayerControl : MonoBehaviour
 {
   public int PlayerSpeed = 10;
-  public Vector3 JumpVelocity = new Vector3(0.0f, 10.0f, 0.0f);
+  public float JumpVelocity = 7.0f;
 
-  private bool onGround = true;
-
+  private bool onGround = false;
   public bool OnGround
   {
     set { onGround = value; }
   }
 
   private Vector3 dir = Vector3.zero;
+  private bool jumpPressed = false;
   
   void Start()
   {
@@ -24,6 +24,12 @@ public class PlayerControl : MonoBehaviour
   {
     float amountToMove = PlayerSpeed * Time.fixedDeltaTime;
     transform.Translate(dir * amountToMove);
+
+    if(jumpPressed)
+    {
+      jumpPressed = false;
+      GetComponent<Rigidbody>().velocity = new Vector3(0.0f, JumpVelocity, 0.0f);
+    }
   }
 
   void Update()
@@ -40,7 +46,7 @@ public class PlayerControl : MonoBehaviour
     }
     if(onGround && Input.GetButton("Jump"))
     {
-      GetComponent<Rigidbody>().AddForce(JumpVelocity, ForceMode.VelocityChange);
+      jumpPressed = true;
     }
   }
 }

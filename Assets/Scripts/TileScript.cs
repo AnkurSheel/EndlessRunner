@@ -20,7 +20,7 @@ public class TileScript : MonoBehaviour
   {
     if(other.tag == "Player")
     {
-      TileManager.Instance.SpawnLevelPiece();
+      LevelManager.Instance.SpawnLevelPiece();
     }
   }
 
