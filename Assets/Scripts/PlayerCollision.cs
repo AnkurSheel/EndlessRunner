@@ -18,7 +18,8 @@ public class PlayerCollision : MonoBehaviour
       Vector3 normal = collision.contacts[0].normal;
       if (Mathf.Abs(normal.z) > Mathf.Abs(normal.y))
       {
-        SceneManager.LoadScene("RunnerGame");
+        OnPlayerDied();
+        
       }
       Debug.Log(normal);
     }
@@ -40,9 +41,22 @@ public class PlayerCollision : MonoBehaviour
   {
     if (other.gameObject.tag == "Coin")
     {
-      ParticleManager.Instance.OnCoinCollected(other.gameObject.transform.position);
-      Destroy(other.gameObject);
+      OnCoinCollected(other);
+      
     }
+  }
+
+  private void OnPlayerDied()
+  {
+    DataManager.Instance.Save();
+    SceneManager.LoadScene("RunnerGame");
+  }
+
+  private void OnCoinCollected(Collider other)
+  {
+    DataManager.Instance.CurrentScore++;
+    ParticleManager.Instance.OnCoinCollected(other.gameObject.transform.position);
+    Destroy(other.gameObject);
   }
 }
 
