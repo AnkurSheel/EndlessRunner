@@ -19,9 +19,7 @@ public class PlayerCollision : MonoBehaviour
       if (Mathf.Abs(normal.z) > Mathf.Abs(normal.y))
       {
         OnPlayerDied();
-        
       }
-      Debug.Log(normal);
     }
     else if(collision.gameObject.tag == "Ground")
     {

@@ -16,6 +16,8 @@ public class ObjectSpawner : MonoBehaviour
 
   public void Start()
   {
+    SpawnCoins();
+
     timeLeftForCoinSpawn = Random.Range(MinCoinSpawnTimer, MaxCoinSpawnTimer);
     timeLeftForEnemySpawn = Random.Range(MinEnemySpawnTimer, MaxEnemySpawnTimer);
   }

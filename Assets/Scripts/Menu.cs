@@ -9,8 +9,14 @@ public class Menu : MonoBehaviour
   {
     transform.GetChild(0).GetComponent<Text>().text = "Coins Collected : " + DataManager.Instance.CoinsCollected;
   }
+  
   public void OnRestartPressed()
   {
     SceneManager.LoadScene("RunnerGame");
+  }
+
+  public void OnQuitPressed()
+  {
+    Application.Quit();
   }
 }
