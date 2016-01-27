@@ -12,6 +12,7 @@ GameObject:
   - 135: {fileID: 13533614}
   - 23: {fileID: 2386554}
   - 114: {fileID: 11478112}
+  - 114: {fileID: 11415078}
   m_Layer: 0
   m_Name: Coin (4)
   m_TagString: Coin
@@ -31,6 +32,7 @@ GameObject:
   - 135: {fileID: 13523678}
   - 23: {fileID: 2310632}
   - 114: {fileID: 11433758}
+  - 114: {fileID: 11445676}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Coin
@@ -50,6 +52,7 @@ GameObject:
   - 135: {fileID: 13505518}
   - 23: {fileID: 2305988}
   - 114: {fileID: 11452466}
+  - 114: {fileID: 11454522}
   m_Layer: 0
   m_Name: Coin (1)
   m_TagString: Coin
@@ -69,6 +72,7 @@ GameObject:
   - 135: {fileID: 13521760}
   - 23: {fileID: 2301176}
   - 114: {fileID: 11477264}
+  - 114: {fileID: 11485042}
   m_Layer: 0
   m_Name: Coin (2)
   m_TagString: Coin
@@ -88,6 +92,7 @@ GameObject:
   - 135: {fileID: 13549894}
   - 23: {fileID: 2392624}
   - 114: {fileID: 11406360}
+  - 114: {fileID: 11458094}
   m_Layer: 0
   m_Name: Coin (3)
   m_TagString: Coin
@@ -365,6 +370,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationSpeed: 360
+--- !u!114 &11415078
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d673ae04dc03da43b4377852a0e3732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1000
 --- !u!114 &11433758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -377,6 +394,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationSpeed: 360
+--- !u!114 &11445676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d673ae04dc03da43b4377852a0e3732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1000
 --- !u!114 &11452466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -389,6 +418,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationSpeed: 360
+--- !u!114 &11454522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d673ae04dc03da43b4377852a0e3732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1000
+--- !u!114 &11458094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d673ae04dc03da43b4377852a0e3732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1000
 --- !u!114 &11477264
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -425,6 +478,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Delay: 15
+--- !u!114 &11485042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d673ae04dc03da43b4377852a0e3732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1000
 --- !u!135 &13505518
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -12,6 +12,7 @@ GameObject:
   - 135: {fileID: 13553524}
   - 23: {fileID: 2379426}
   - 114: {fileID: 11450374}
+  - 114: {fileID: 11410490}
   m_Layer: 0
   m_Name: Coin (5)
   m_TagString: Coin
@@ -31,6 +32,7 @@ GameObject:
   - 135: {fileID: 13523078}
   - 23: {fileID: 2333802}
   - 114: {fileID: 11449550}
+  - 114: {fileID: 11428732}
   m_Layer: 0
   m_Name: Coin (8)
   m_TagString: Coin
@@ -50,6 +52,7 @@ GameObject:
   - 135: {fileID: 13597598}
   - 23: {fileID: 2319756}
   - 114: {fileID: 11428286}
+  - 114: {fileID: 11448484}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Coin
@@ -69,6 +72,7 @@ GameObject:
   - 135: {fileID: 13540130}
   - 23: {fileID: 2305524}
   - 114: {fileID: 11410134}
+  - 114: {fileID: 11475704}
   m_Layer: 0
   m_Name: Coin (1)
   m_TagString: Coin
@@ -88,6 +92,7 @@ GameObject:
   - 135: {fileID: 13558468}
   - 23: {fileID: 2343724}
   - 114: {fileID: 11464110}
+  - 114: {fileID: 11406804}
   m_Layer: 0
   m_Name: Coin (7)
   m_TagString: Coin
@@ -123,6 +128,7 @@ GameObject:
   - 135: {fileID: 13568888}
   - 23: {fileID: 2329294}
   - 114: {fileID: 11424852}
+  - 114: {fileID: 11479816}
   m_Layer: 0
   m_Name: Coin (6)
   m_TagString: Coin
@@ -418,6 +424,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 150064}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &11406804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d673ae04dc03da43b4377852a0e3732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1000
 --- !u!114 &11410134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -430,6 +448,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationSpeed: 360
+--- !u!114 &11410490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d673ae04dc03da43b4377852a0e3732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1000
 --- !u!114 &11424852
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -454,6 +484,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationSpeed: 360
+--- !u!114 &11428732
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d673ae04dc03da43b4377852a0e3732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1000
+--- !u!114 &11448484
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d673ae04dc03da43b4377852a0e3732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1000
 --- !u!114 &11449550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -490,6 +544,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationSpeed: 360
+--- !u!114 &11475704
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d673ae04dc03da43b4377852a0e3732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1000
 --- !u!114 &11478268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -502,6 +568,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Delay: 15
+--- !u!114 &11479816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d673ae04dc03da43b4377852a0e3732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1000
 --- !u!135 &13523078
 SphereCollider:
   m_ObjectHideFlags: 1

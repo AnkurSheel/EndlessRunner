@@ -12,6 +12,7 @@ GameObject:
   - 135: {fileID: 13529864}
   - 23: {fileID: 2378684}
   - 114: {fileID: 11438620}
+  - 114: {fileID: 11426674}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Coin
@@ -64,6 +65,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 118914}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &11426674
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d673ae04dc03da43b4377852a0e3732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1000
 --- !u!114 &11438620
 MonoBehaviour:
   m_ObjectHideFlags: 1

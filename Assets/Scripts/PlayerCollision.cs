@@ -57,7 +57,8 @@ public class PlayerCollision : MonoBehaviour
 
   private void OnCoinCollected(Collider other)
   {
-    DataManager.Instance.CurrentScore++;
+    int points = other.gameObject.GetComponent<Coin>().points;
+    DataManager.Instance.CurrentScore += points;
     DataManager.Instance.CoinsCollected++;
     ParticleManager.Instance.OnCoinCollected(other.gameObject.transform.position);
     Destroy(other.gameObject);

@@ -12,6 +12,7 @@ GameObject:
   - 135: {fileID: 13584498}
   - 23: {fileID: 2351396}
   - 114: {fileID: 11453164}
+  - 114: {fileID: 11496718}
   m_Layer: 0
   m_Name: Coin (3)
   m_TagString: Coin
@@ -31,6 +32,7 @@ GameObject:
   - 135: {fileID: 13552320}
   - 23: {fileID: 2387284}
   - 114: {fileID: 11441046}
+  - 114: {fileID: 11476756}
   m_Layer: 0
   m_Name: Coin (2)
   m_TagString: Coin
@@ -66,6 +68,7 @@ GameObject:
   - 135: {fileID: 13501950}
   - 23: {fileID: 2317780}
   - 114: {fileID: 11444706}
+  - 114: {fileID: 11486502}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Coin
@@ -85,6 +88,7 @@ GameObject:
   - 135: {fileID: 13554910}
   - 23: {fileID: 2300352}
   - 114: {fileID: 11403340}
+  - 114: {fileID: 11432414}
   m_Layer: 0
   m_Name: Coin (1)
   m_TagString: Coin
@@ -312,6 +316,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Delay: 15
+--- !u!114 &11432414
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 186620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d673ae04dc03da43b4377852a0e3732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1000
 --- !u!114 &11441046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -348,6 +364,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationSpeed: 360
+--- !u!114 &11476756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d673ae04dc03da43b4377852a0e3732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1000
+--- !u!114 &11486502
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d673ae04dc03da43b4377852a0e3732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1000
+--- !u!114 &11496718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d673ae04dc03da43b4377852a0e3732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1000
 --- !u!135 &13501950
 SphereCollider:
   m_ObjectHideFlags: 1
